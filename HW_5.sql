@@ -73,9 +73,9 @@ SELECT
         WHEN unit_cost > 20 THEN 'Expensive'
         ELSE 'others'
     END AS category,
-    sum(quantity) AS number_of_products_in_category
+    SUM(quantity) AS number_of_products_in_category
 FROM
     purchase_order_details
 WHERE
-    inventory_id is NOT NULL
-    group by category;
+    inventory_id IS NOT NULL
+GROUP BY category;
