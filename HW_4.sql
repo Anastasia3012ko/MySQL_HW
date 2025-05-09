@@ -45,7 +45,7 @@ UPDATE weather_in_my_city
 SET 
     nighttime_tempereture = nighttime_tempereture + 1
 WHERE
-    view_table_weather <= 10;
+    wind_speed <= 10;
     
 
 /*
