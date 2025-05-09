@@ -75,7 +75,7 @@ SELECT
 FROM
     employees
 WHERE
-    last_name LIKE '%p%';
+    last_name LIKE '%_p_%';
     
 /*
 Выберите все строки из таблицы orders там, где нет информации о shipper_id.
