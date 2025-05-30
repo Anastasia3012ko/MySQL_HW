@@ -1,5 +1,5 @@
 /*1. Для каждого заказа order_id выведите минимальный, максмальный и средний unit_cost*/
-SElECT
+SELECT
 	purchase_order_id, unit_cost,
 	MIN(unit_cost) OVER (partition by purchase_order_id) min_unit_cost_in_order,
 	MAX(unit_cost) OVER (partition by purchase_order_id) max_unit_cost_in_order,
